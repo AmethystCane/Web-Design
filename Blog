@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url("https://i.imgur.com/86kcMrc.jpg");
+      background-size: cover;
+      color: white;
+    }
+    img {
+      margin: 30px 0px 10px 0px;
+      border: 16px solid rgba(128, 0, 128, 0.7);
+      border-radius: 24px;
+    }
+    body {
+      background: rgba(192, 192, 192, 0.4);
+      font-size: 18px;
+      font-family: garamond;
+    }
+    a {
+      font-family: courier new;
+      color: purple;
+    }
+    button {
+      font-family: garamond;
+      font-size: 16px;
+      border-radius: 20px;
+      background: rgba(245, 245, 248, 0.5);
+      color: black;
+    }
+    ul {
+      padding: 6px;
+      background: rgba(200, 200, 200, 0.7);
+    }
+    li {
+      display: inline;
+      padding: 0px 40px 0px 40px;
+    }
+    h1 {
+      font-family: courier new;
+      color: white;
+      font-size: 50px;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    article {
+      max-width: 500px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 40px;
+      }
+      li {
+        display: block;
+        padding: 5px;
+      }
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/ABl34ak.jpg" alt="Logo" style="width: 130px; height:120px">
+    <h1>Ugonna's Blog</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Lifestyle</a></li>
+      <li><a href="#">Tech Tips</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <article>
+  <h2>Hello Hello Hello!</h2>
+  <p>Welcome to my humble blog! Here we share our tech jouney with one another and prove tips and resources to collectively reach our dream careers. If this is the kind of supportive community you've been looking for, then consider subscrbing to recieve the community link, as well as free weekly letters on the latest updates.</p>
+  <button>Subscribe</button>
+  </article>
+  <article>
+  <h2>Paradise</h2>
+  <p>September 19th... Exactly one week before I embarked on my usual 3 hour train ride back to uni, I came to a sudden realisation that stopped my heart and shock me to my very core. That realisation was...</p>
+  <button>Read post</button>
+  </article>
+  <article>
+  <h2>Week 10 of Coding</h2>
+  <p>It's not easy! Nobody ever said it was going to be easy and they certainly didn't neglect to say it was going to hard, either. Once again, I thank the Lord that I was born in this century where any information is accesible on the world wide web!</p>
+  <button>Read post</button>
+  </article>
+</body>
