@@ -89,7 +89,7 @@
   </article>
   <script>
    $("button").on("click", function() {
-     alert("Clicked!");
+     alert("Loading...");
    });
   </script>
 </body>
