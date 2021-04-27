@@ -1,2 +1,8 @@
 # Front-Web-Page
-Experimented with some HTML and CSS functions to make a simple webpage 🧑‍🎨
+Created using HTML and CSS.
+# Blog
+Created using HTML, CSS and a smidge of JS.
+
+I plan to add more elemnts to make it more interactive.
+# More..
+...to come! 🌞
