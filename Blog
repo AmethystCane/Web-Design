@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+  <title>Ugonna's Blog</title>
   <link href="/normalize.css" rel="stylesheet">
   <style>
     header {
