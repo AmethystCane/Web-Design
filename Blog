@@ -91,5 +91,8 @@
    $("button").on("click", function() {
      alert("Loading...");
    });
+   $("a").on("click", function() {
+     alert("Loading...");
+   });
   </script>
 </body>
