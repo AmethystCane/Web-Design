@@ -4,5 +4,5 @@ Created using HTML and CSS.
 Created using HTML, CSS and a smidge of JS.
 
 I plan to add more elements to make it more interactive.
-# More...
+# More..
 ...to come! 🌞
