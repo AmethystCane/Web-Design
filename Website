@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css2?family=Aclonica&family=Cutive+Mono&display=swap' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap' rel='stylesheet' type='text/css'>
+
+<title>Ugonna Okoro</title>
+  
+<style>
+  body {
+    font-family: helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 600px;
+    background: #232323;
+  }
+  div {
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0px 0px 0px;
+    border-radius: 12px;
+    }
+  h1 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    margin: 60px 0 0 0;
+    color: #aaaaaa;
+  }
+  h2 {
+    font-family: 'Baloo Chettan 2', cursive;
+    text-align: center;
+    margin: 0px 0 70px 0;
+    color: #bbbbbb;
+  }
+  p {
+    height: 30px;
+    color: rgba(255,255,255,1);
+    background: black;
+    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.4));
+    padding: 10px;
+    text-align: justify;
+    line-height: 20px;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+  }
+  small {
+    font-size: 15px;
+    font-family: 'Baloo Chettan 2', cursive;
+    opacity: 0;
+  }
+  
+  .show-description p {
+    height: 150px;
+  }
+  .show-description small {
+    opacity: 1;
+  }
+  
+  .profile {
+    background: url("https://i.imgur.com/NZTYd84.jpg");
+    background-size: cover;
+  }
+  .skills {
+    background: url("https://i.imgur.com/uQq9Ora.jpg");
+    background-size: cover;
+  }
+  .experience1 {
+    background: url("https://i.imgur.com/szCyJSh.jpg");
+    background-size: 90%;
+  }
+  .experience2 {
+    background: url("https://i.imgur.com/OTyyRKD.jpg");
+    background-size: 600px 340px;
+    margin: 0px;
+    border-radius: 0px;
+  }
+  .education {
+    background: url("https://i.imgur.com/dzkWZ46.jpg");
+    background-size: 600px 250px;
+  }
+  .date {
+    float: right;
+  }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 50px;
+      margin-top: 20px;
+      line-height: 40px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 20px 0 30px 0;
+    }
+    div {
+      margin: 20px 12px 0 12px;
+    }
+    p { 
+      font-size: 12px;
+      line-height: 15px;
+    }
+    small {
+      font-size: 11px;
+    }
+    .experience2 {
+      background-size: cover;
+      margin: 0 12px 0 12px;
+      border-radius: 0px;
+    }
+    .education {
+      background-size: cover;
+    }
+  }
+}
+</style>
+   
+</head>
+  
+<body>
+  <h1>Ugonna Okoro</h1>
+  <h2>Student at University of Brighton</h2>
+  
+  <div class="profile">
+    <p>Profile<br />
+    <small>I'm a British STEM student who is invested in the tech industry. I am paticularly interested in pursuing a career in cybersecurity. If I'm not improving my skills and knowledge, I'm listening to music, watching anime or cooking/baking.</small></p>
+  </div>
+  
+  <div class="skills">
+    <p>Skills<br />
+    <small>Windows | Microsoft Office Suite | Python | Data Analysis | Customer Service |	Self-motivated | Problem-solver | Team Player | Communication (verbal and written)</small></p>
+  </div>
+  
+  <div class="experience1">
+    <p>Experience<br />
+    Intro to Python Programming | Code First Girls <span class="date">Feb - Apr 2021</span><br><br />
+    <small>Curriculum: Data types and variables - Input, Loops and Functions - Logic and If Statements - Lists and Dictionaries - Files, Pip and APIs. <br />For my final project, I worked with 3 other teammates to perform calculations on sales data, graphed the results and presented it to our cohorts and supervisors.</small></p>
+  </div>
+  
+  <div class="experience2">
+    <p>Student Ambassador | University of Brighton <span class="date">Nov 2019 - Present</span> <br><br />
+    <small>Promoted the benefits of Higher Education to students of all ages. <br>Shared resources and facilities available to students with disabilities and minority groups. <br>Worked with and led diverse teams to deliver 20+ promotional events consisting of open days, primary school visits, social media promotions, and summer programmes for prospective students.</small></p>
+  </div>
+  
+  <div class="education">
+    <p>Education<br />
+    <small>University of Brighton | BSc (Hons) Biomedical Science <span class="date">2018 - 2021</span> <br>
+      Edmund Campion CSS | Advanced Functions, Biology, Chemistry &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="date">2014 - 2018</span></small></p>
+  </div>
+  
+<script>
+  $('div').on('click', function() {
+    $(this).toggleClass('show-description');
+  });
+</script>
+</body>
+  
+</html>
