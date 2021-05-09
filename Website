@@ -130,7 +130,7 @@
   
   <div class="profile">
     <p>Profile<br />
-    <small>I'm a British STEM student who is invested in the tech industry. I am paticularly interested in pursuing a career in cybersecurity. If I'm not improving my skills and knowledge, I'm listening to music, watching anime or cooking/baking.</small></p>
+    <small>I'm a British STEM student who is invested in the tech industry. I am paticularly interested in pursuing a career in cybersecurity. If I'm not improving my skills and knowledge, I'm listening to music&#127911;, watching anime&#128162;, or cooking&#127858;/baking&#127874;.</small></p>
   </div>
   
   <div class="skills">
@@ -141,7 +141,7 @@
   <div class="experience1">
     <p>Experience<br />
     Intro to Python Programming | Code First Girls <span class="date">Feb - Apr 2021</span><br><br />
-    <small>Curriculum: Data types and variables - Input, Loops and Functions - Logic and If Statements - Lists and Dictionaries - Files, Pip and APIs. <br />For my final project, I worked with 3 other teammates to perform calculations on sales data, graphed the results and presented it to our cohorts and supervisors.</small></p>
+    <small>Curriculum: Data types and variables &#9702; Input, Loops and Functions &#9702; Logic and If Statements &#9702; Lists and Dictionaries &#9702; Files, Pip and APIs. <br />For my final project, I worked with 3 other teammates to perform calculations on sales data, graphed the results and presented it to our cohorts and supervisors.</small></p>
   </div>
   
   <div class="experience2">
