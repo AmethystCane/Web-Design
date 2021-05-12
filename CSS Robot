@@ -6,7 +6,10 @@
   div {
     height: 150px;
     width: 300px;
-    margin: 0 auto;
+  }
+  .robot {
+    position: relative;
+    left: 200px;
   }
   .beep {
     width: 5px;
@@ -14,6 +17,8 @@
     border: 5px solid transparent;
     border-top: 10px solid #af7dbd;
     border-bottom: 80px solid #9c4aba;
+    position: relative;
+    left: 140px;
   }
   .brain {
     background: radial-gradient(ellipse, white 15%, transparent 30%), #c7b369;
@@ -24,6 +29,8 @@
     width: 150px;
     border-radius: 60px;
     border-bottom: 50px solid #bd7d8f;
+    position: relative;
+    left: 70px;
   }
   .torso {
     height: 0;
@@ -39,14 +46,20 @@
     background: #af7dbd;
     border-radius: 40px;
     border: 15px solid #9c4aba;
+    position: relative;
+    left: 110px;
+    top: -10px;
+    z-index: -1;
   }
   
 </style> 
 </head>
 
 <body>
-  <div class="beep"></div>
-  <div class="brain"></div>
-  <div class="torso"></div>
-  <div class="foot"></div>
+  <div class="robot">
+    <div class="beep"></div>
+    <div class="brain"></div>
+    <div class="torso"></div>
+    <div class="foot"></div>
+  </div>
 </body>
