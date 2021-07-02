@@ -6,3 +6,5 @@
 - [x] **Website** (HTML, CSS and smidge more of JS 🤏)
 - [x] **CSS Robot** (A cute little robot created by one of Gru's minions!)
 - [ ] **Madlibs Game**
+
+*Credits to General Assembly Dash*
