@@ -1,8 +1,13 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+
+  <script src="/assets/jquery.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
+
 <style>
-  
+
   div {
     height: 150px;
     width: 300px;
@@ -20,11 +25,34 @@
     position: relative;
     left: 140px;
   }
+  @keyframes blink {
+    50% {
+      background: radial-gradient(ellipse, purple 15%, transparent 30%), #c7b369; /* The glowing eyes */
+      background-size: 10% 10%; /* Fix the animation in the same position as the eyes */
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      background: -webkit-radial-gradient(ellipse, purple 15%, transparent 30%), #c7b369;
+      background-size: 10% 10%;
+    }
+  }
+  @-moz-keyframes blink {
+    50% {
+      background: -moz-radial-gradient(ellipse, purple 15%, transparent 30%), #c7b369;
+      background-size: 10% 10%;
+    }
+  }
+  .laser {
+    animation: blink 0.5s infinite;
+    -webkit-animation: blink 0.5s infinite;
+    -moz-animation: blink 0.5s infinite;
+  }
   .brain {
     background: radial-gradient(ellipse, white 15%, transparent 30%), #c7b369;
-    background: -webkit-radial-gradient(circle, white 15%, transparent 0%), #c7b369;
+    background: -webkit-radial-gradient(ellipse, white 15%, transparent 30%), #c7b369;
     background: -moz-radial-gradient(ellipse, white 15%, transparent 30%), #c7b369;
-    background-size: 10% 10%; /*5% 100%*/
+    background-size: 10% 10%; /* 5% 100% */
     height: 150px;
     width: 150px;
     border-radius: 60px;
@@ -40,6 +68,32 @@
     border-right: 75px solid transparent;
     border-radius: 20px 20px 100px 100px;
   }
+  .left {
+    font-family: 'Poller One', verdana, arial, sans-serif;
+    font-weight: bold;
+    font-size: 250px;
+    color: #9c4aba;
+    transform: rotate(200deg);
+    -webkit-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    position: relative;
+    left: -375px;
+    top: -204px;
+    z-index: -1;
+  }
+  .right {
+    font-family: 'Poller One', verdana, arial, sans-serif;
+    font-weight: bold;
+    font-size: 250px;
+    color: #9c4aba;
+    transform: scaleY(-1) rotate(20deg);
+    -webkit-transform: scaleY(-1) rotate(20deg);
+    -moz-transform: scaleY(-1) rotate(20deg);
+    position: relative;
+    left: 220px;
+    top: -354px;
+    z-index: -1;
+  }
   .foot {
     height: 40px;
     width: 40px;
@@ -51,15 +105,78 @@
     top: -10px;
     z-index: -1;
   }
-  
-</style> 
+
+  @keyframes dance {
+    from {
+      left: 85px;
+    }
+  }
+  @-webkit-keyframes dance {
+    from {
+      left: 800px;
+    }
+  }
+  @-moz-keyframes dance {
+    from {
+      left: 800px;
+    }
+  }
+
+  img {
+    animation: dance 4s infinite;
+    -webkit-animation: dance 4s infinite;
+    -moz-animation: dance 4s infinite;
+    position: absolute;
+    top: 27px;
+    left: 305px;
+  }
+
+</style>
 </head>
 
 <body>
   <div class="robot">
     <div class="beep"></div>
     <div class="brain"></div>
-    <div class="torso"></div>
+    <div class="torso">
+      <div class="left">j</div>
+      <div class="right">j</div>
+    </div>
     <div class="foot"></div>
   </div>
+
+  <button class="flash">Laser Eyes</button>
+  <button class="color">Colour</button>
+  <button class="moves">Minion</button>
+
+  <img src="https://i.imgur.com/xbXUP85.gif">
+
+  <script>
+  // When eyes button is clicked, toggle laser class on/off
+  $(".flash").click(function() {
+    $(".brain").toggleClass("laser");
+  });
+
+  // When color button is clicked...
+  $(".color").click(function() {
+    // assign each named color a random number 0-255
+    var red = Math.floor(Math.random() * 255);
+    var green = Math.floor(Math.random() * 255);
+    var blue = Math.floor(Math.random() * 255);
+
+    // Generate an RGBA value from red, green, and blue
+    var randomRGBA = 'rgba('+red+','+green+','+blue+')';
+
+    // and change the body's background to a random colour
+    $("body").css("background", randomRGBA);
+
+    // Display the RGBA value in an alert window; commented out alert to stop notifications
+    //alert(randomRGBA);
+  });
+
+  $(".moves").click(function() {
+    $("img").toggle();
+  });
+
+  </script>
 </body>
