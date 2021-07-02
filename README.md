@@ -1,5 +1,5 @@
 ## Web Design
- A collection of different mini projects! 
+**A collection of different mini projects!** 
 - [x] **Front-Web-Page** (HTML and CSS)
 - [x] **Blog** (HTML, CSS and a smidge of JS)
   - [ ] Add more elements and JS to make it more interactive.
